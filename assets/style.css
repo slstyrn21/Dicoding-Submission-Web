@@ -1,0 +1,786 @@
+* {
+    text-decoration: none;
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Open Sans', sans-serif;
+    background-color: white;
+}
+
+.wrapper {
+    width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+header {
+    display: inline;
+}
+
+header .logo a {
+    font-family: 'Berkshire Swash', cursive;
+    font-weight: 800;
+    font-size: 50px;
+    float: left;
+    color: #f0a174;
+    text-shadow: 1px 2px 2px #d47b47;
+    transition: all 0.5s;
+}
+
+header .logo a:hover {
+    font-size: 53px;
+    transition: all 0.5s;
+}
+
+header .menu {
+    float: right;
+}
+
+header nav {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    line-height: 80px;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background: #fff9cb;
+    z-index: 1;
+    border-bottom: 1px solid rgba(255, 201, 180, 0.4);
+}
+
+header nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+header nav ul li {
+    float: left;
+}
+
+header nav ul li a {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 17px;
+    color: #f0a174;
+    font-weight: 800;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+header nav ul li a:hover { 
+    color: #F8B595;
+    font-size: 19px;
+    transition: all 0.5s;
+}
+
+/* .menu-icon {
+    display: none;
+    float: right;
+    margin: 
+} */
+
+section {
+    margin: auto;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+#home {
+    padding: 20px;
+    margin-top: 50px;
+}
+
+#recipe {
+    background-image: linear-gradient(120deg, rgba(255, 151, 65, 0.39), rgba(255, 255, 0, 0.315));
+    border-radius: 30px;
+    padding-bottom: 30px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+}
+
+#tutorial {
+    background-image: linear-gradient(120deg, rgba(255, 151, 65, 0.39), rgba(255, 255, 0, 0.315));
+    border-radius: 30px;
+    padding-bottom: 30px;
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+    float: left;
+    width: 67%;
+    position: relative;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.column {
+    margin: 40px 30px 40px 40px;
+}
+
+.column .desc {
+    font-size: 26px;
+    font-weight: lighter;
+    font-family: 'Londrina Solid', cursive;
+    color:#e9884f;
+}
+
+.column .desc1 {
+    font-size: 26px;
+    font-weight: lighter;
+    font-family: 'Londrina Solid', cursive;
+    color:#e28854;
+}
+
+.column p, .wrapper p {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: rgb(46, 46, 46);
+    font-size: 15px;
+}
+
+h3 {
+    font-family: 'Noto Sans JP', sans-serif;
+    color: rgb(46, 46, 46);
+    font-size: 18px;
+}
+
+h2 {
+    font-family: 'Londrina Solid', cursive;
+    font-weight: 600;
+    font-size: 50px;
+    margin-bottom: 20px;
+    color: #e9884f;
+    width: 100%;
+    line-height: 50px;
+}
+
+h2 #rumah {
+    letter-spacing: 5px;
+}
+
+a {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+}
+
+a.btn-peach {
+    background:#f0a174;
+    color: #FFF5DE;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 8px 15px 8px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+    transition: all 0.5s;
+}
+
+a.btn-peach:hover{
+    background: #ffe5a4;
+    color: #f89c72;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+a.btn-yellow {
+    background:#fff49e;
+    color: #FF8264;
+    border-radius: 20px;
+    margin-top: 20px;
+    padding: 10px 15px 10px 15px;
+    cursor: pointer;
+    font-weight: bold;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.3);
+    transition: all 0.5s;
+}
+
+a.btn-yellow:hover{
+    background: #f0a174;
+    color: #FFF5DE;
+    text-decoration: none;
+    transition: all 0.5s;
+}
+
+p {
+    margin: 10px 0px 0px 0px;
+    padding: 10px 0px 10px 0px;
+}
+
+#recipe .center .btn, #tutorial .center .btn {
+    padding-bottom: 30px;
+}
+
+#profile {
+    text-align: center;
+}
+
+.list-benefit, .list-tutorial {
+    margin: 0 auto;
+    width: 80%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.icon-benefit {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.icon-benefit img {
+    width: 80%;
+    border-radius: 50%;
+    border: 2px dashed rgb(187, 84, 43);
+    padding: 0px;
+    box-shadow: 0 5px 8px 0 rgba(255, 255, 255, 0.3);
+    transition: all 0.5s;
+}
+
+.icon-benefit img:hover {
+    width: 90%;
+    transition: all 0.5s;
+}
+
+.vid-tutorial {
+    margin: 0 auto;
+    width: 100%;
+    padding: 0 20px 20px 20px;
+}
+
+.vid-tutorial iframe {
+    width: 100%;
+    background: #f0a174;
+    padding: 10px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px 0 rgba(141, 128, 128, 0.3);
+}
+
+.icon-benefit p, .vid-tutorial a {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    text-align: center;
+    color: #d37b49;
+    margin: 20px 0px 20px 0px;
+    display: block;
+    transition: all 0.5s;
+}
+
+.vid-tutorial a:hover {
+    color: #F8B595;
+    font-size: 16px;
+    transition: all 0.5s;
+}
+
+.clear {
+    clear: both;
+}
+
+aside {
+    width: 25%;
+    margin-right: 120px;
+    position: relative;
+    margin-bottom: 50px;
+    display: flex;
+    float: right;
+    transition: all 0.5s;
+}
+
+aside:hover {
+    width: 26%;
+    transition: all 0.5s;
+}
+
+aside #profile {
+    border-radius: 40px;
+    width: 100%;
+    background-image: linear-gradient(120deg, rgba(255, 87, 87, 0.699), rgba(255, 255, 0, 0.39));
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+    padding: 0px;
+    margin: 4px;
+}
+
+aside #profile h4 {
+    font-size: 26px;
+    font-weight: lighter;
+    font-family: 'Londrina Solid', cursive;
+    color: #fff7e2;
+    text-shadow: 2px 3px #c7835c;
+    padding: 25px 0px;
+    margin: 10px 0px 10px 0px;
+}
+
+aside #profile p {
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    color: rgb(46, 46, 46);
+    font-size: 14px;
+    padding: 5px 0px;
+}
+
+aside #profile p #nama {
+    font-size: 18px;
+}
+
+aside img {
+    width: 140px;
+    border: 5px solid #c7835c;
+    border-radius: 40px;
+}
+
+.resep, .tutorials {
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#content {
+    background-image: linear-gradient(120deg, rgba(255, 151, 65, 0.39), rgba(255, 255, 0, 0.315));
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.3);
+    width: 100%;
+    position: relative;
+    border-radius: 10px;
+    margin: 0 auto;
+}
+
+#content .center { /* resep2 terpopuler */
+    font-family: 'Londrina Solid', cursive;
+    font-size: 26px;
+    font-weight: lighter;
+    margin-top: 20px;
+    color: #e9884f;
+    line-height: 40px;
+    padding: 30px 0px 10px 0px;
+}
+
+.art {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 60px;
+}
+
+.resep #content {
+    padding-bottom: 50px;
+}
+
+.resep #content article {
+    width: 29%;
+    float: left;
+    margin: 20px;
+    overflow: auto;
+    transition: all 0.5s;
+}
+
+.resep #content article:hover{
+    box-shadow: 0 0 18px 0 rgba(255, 110, 52, 0.3);
+    width: 29.5%;
+    transition: all 0.5s;
+    padding: 40px;
+}
+
+.resep article h3 {
+    font-size: 20px;
+    text-align: center;
+    color: #ca6429;
+}
+
+.resep article a p {
+    height: 100px;
+    overflow: hidden;
+    padding: 0;
+    margin-top: 5px;
+    text-align: justify;
+}
+
+.resep-icon {
+    padding: 20px 0px;
+}
+
+.resep-icon img {
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    background: #f0a174;
+    padding: 10px;
+    border-radius: 30px;
+    text-align: center;
+}
+
+.tutorials article {
+    margin: 20px 50px;
+    overflow: auto;
+    width: 40%;
+    float: left;
+    text-align: center;
+    transition: all 0.5s;
+}
+
+.tutorials article:hover{
+    box-shadow: 0 0 18px 0 rgba(255, 110, 52, 0.3);
+    width: 40.5%;
+    transition: all 0.5s;
+}
+
+.tutorials article a p {
+    font-size: 20px;
+    text-align: center;
+    display: block;
+    color: #ca6429;
+    height: 50px;
+    padding: 0;
+    margin-top: 5px;
+    font-weight: 700;
+}
+
+.tutorials article a iframe {
+    background: #f0a174;
+    padding: 10px;
+    border-radius: 35px;
+    width: 80%;
+}
+
+.tutorials #content {
+    padding-bottom: 30px;
+}
+
+.tutorials .artikel {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    padding: 25px;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.aboutme {
+    margin-bottom: 20px;
+}
+
+.aboutme #content {
+    padding-bottom: 30px;
+}
+
+.aboutme #content .center {
+    padding-bottom: 10px;
+}
+
+.aboutme .artikel {
+    width: 100%;
+    margin: 0 auto;
+    padding: 0px 60px 0px 60px;
+    display: block;
+}
+
+.aboutme #tentang h3 {
+    font-size: 40px;
+    color: #c7835c;
+    display: inline-block;
+    position: relative;
+    text-shadow: 2px 2px 2px #ffffff;
+}
+
+.aboutme .artikel p {
+    line-height: 30px;
+    text-align: justify;
+}
+
+.aboutme #tentang img {
+    width: 260px;
+    height: 100%;
+    border: 5px solid #c7835c;
+    border-radius: 40px;
+    margin: 40px;
+    transition: all 0.5s;
+}
+
+.aboutme #tentang img:hover {
+    width: 265px;
+    box-shadow: 0 4px 8px 0 rgba(255, 143, 109, 0.63);
+    transition: all 0.5s;
+}
+
+.footer {
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-bottom: 20px;
+}
+
+.footer-section, .footer-section-logo {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.footer-section-logo h4 {
+    font-family: 'Berkshire Swash', cursive;
+    font-size: 30px;
+    margin-bottom: 20px;
+    color: #e9884f;
+    width: 100%;
+    line-height: 50px;
+    position: absolute;
+}
+
+.footer-section h4 {
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 60px;
+    color: #eb7836;
+    border-bottom: 1px solid #e9874f;
+}
+
+.footer-section p {
+    text-align: center;
+    font-family: 'Noto Sans JP', sans-serif;
+    font-size: 13px;
+    font-weight: 500;
+    margin: 0;
+    padding: 15px 0px 0px 0px;
+}
+
+.sosmed a img {
+    width: 70px;
+    padding: 15px 15px 0px 25px;
+    margin: 0 auto;
+    transition: all 0.5s;
+}
+
+.sosmed a img:hover {
+    width: 73px;
+    padding: 10px 15px 0px 22px;
+    transition: all 0.5s;
+}
+
+#contact {
+    background-color: #fff9cb;
+    padding: 30px 0px 30px 0px;
+}
+
+footer {
+    font-size: 12px;
+    padding: 2px;
+    color: black;
+    background-color: #fff9cb;
+    text-align: center;
+    font-weight: lighter;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+
+footer div {
+    background: #e9874f41;
+    padding: 5px;
+}
+
+.tombol-menu {
+    position: absolute;
+    top: 1.7rem;
+    right: 1rem;
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+}
+
+.tombol-menu .garis {
+    height: 3px;
+    background-color: #f0a174;
+}
+
+@media screen and (max-width: 991.98px) {
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: inline;
+        width: 100%;
+        text-align: center;
+    }
+
+    .tombol-menu {
+        display: flex; 
+        transition: all 0.5s;
+    }
+
+    .tombol-menu:hover{
+        width: 32px;
+        height: 22px;
+        transition: all 0.5s;
+    }
+
+    nav .menu {
+        display: none;
+        width: 100%;
+    }
+
+    nav .menu.active {
+        display: flex;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 60px;
+    }
+
+    nav ul li {
+        width: 100%;
+        border-bottom: 1px solid #f0a174;
+    }
+
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        margin: auto;
+        width: 80%;
+    }
+
+    .desc, #rumah {
+        text-align: center;
+    }
+
+    #home .column p {
+        text-align: center;
+        padding: 20px 100px;
+    }
+
+    #home {
+        padding-bottom: 5px;
+    }
+
+    .desc1 {
+        padding-top: 50px;
+    }
+
+    .icon-benefit img {
+        width: 80%;
+    }
+
+    .sosmed a img {
+        width: 28%;
+        padding: 15px 6px 0px 7px;
+    }
+
+    .sosmed a img:hover{
+        width: 35%;
+        padding: 10px 6px 0px 7px;
+    }
+
+    #tutorial, aside {
+        width: 100%;
+    }
+
+    aside {
+        width: 50%;
+        margin: 0 auto;
+        display: flex;
+        float: none;
+        padding-bottom: 30px;
+        transition: all 1s;
+    }
+
+    aside:hover {
+        width: 91%;
+        transition: all 0.7s;
+    }
+
+    .art {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .resep #content article {
+        width: 40%;
+        overflow: auto;
+    }
+
+    .resep #content article:hover{
+        width: 41%;
+    }
+
+    .resep #content article h3 {
+        font-size: 16px;
+    }
+
+    .resep #content article a p {
+        font-size: 12px;
+    }
+    
+    .card {
+        width: 50px;
+        height: 400px;
+        margin: 0 auto;
+    }
+
+    #content .center {
+        padding-bottom: 0px;
+    }
+
+    .tutorials #content article {
+        width: 80%;
+        text-align: center;
+        float: none;
+        margin-bottom: 40px;
+    }
+
+    .tutorials #content article:hover{
+        width: 80.5%;
+    }
+
+    .tutorials #content article iframe {
+        width: 70%;
+    }
+
+    .tutorials .artikel {
+        width: 85%;
+        margin: 0 auto;
+    }
+
+    .tutorials .artikel a p {
+        font-size: 17px;
+    }
+
+    .aboutme #tentang h3 {
+        font-size: 30px;
+    }
+
+    .aboutme .artikel p {
+        line-height: 30px;
+    }
+
+    .aboutme #tentang img {
+        width: 40%;
+        height: 100%;
+        margin: 40px auto;
+        transition: all 0.5s;
+    }
+
+    .aboutme #tentang img:hover {
+        width: 45%;
+        transition: all 0.5s;
+    }
+
+    .artikel .card {
+        width: 100%;
+        height: 100%;
+    }
+
+}
